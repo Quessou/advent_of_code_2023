@@ -97,5 +97,6 @@ mod tests {
         unfeasible.insert(CubeColor::Green, 5);
         unfeasible.insert(CubeColor::Red, 1);
         unfeasible.insert(CubeColor::Blue, 5);
+        assert!(!round.is_possible(&unfeasible));
     }
 }
